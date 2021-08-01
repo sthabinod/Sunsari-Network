@@ -1,0 +1,835 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="keywords" content="Sunsari network,Nepal,Itahari,Package plans, Service">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="author" content="Binod Shrestha">
+  <title>Sunsari Networks</title>
+  <!--====== Favicon Icon ======-->
+  <link rel="shortcut icon" href="{% static 'img/2.png' %}" type="image/png">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel=" stylesheet" href="{% static 'css/animate.css' %}">
+  <link rel=" stylesheet" href="{% static 'css/LineIcons.css' %}">
+  <link rel=" stylesheet" href="{% static 'css/owl.carousel.css' %}">
+  <link rel=" stylesheet" href="{% static 'css/owl.theme.css' %}">
+  <link rel=" stylesheet" href="{% static 'css/magnific-popup.css' %}">
+  <link rel=" stylesheet" href="{% static 'css/nivo-lightbox.css' %}">
+  <link rel=" stylesheet" href="{% static 'css/main.css' %}">
+  <link rel=" stylesheet" href="{% static 'css/responsive.css' %}">
+
+</head>
+<style>
+  .customer {
+    font-size: 35px;
+    margin-bottom: 12px;
+    font-weight: 600;
+
+    line-height: 30px;
+  }
+
+  icon-me:hover {
+    background-color: #D8366F;
+    color: white;
+  }
+
+  /* ==========================================================================
+   Features 
+   ========================================================================== */
+
+  #feature {
+    background: white;
+  }
+
+  #feature .featured-bg {
+    background: #fff;
+  }
+
+  #feature .featured-border1 {
+    border-bottom: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+  }
+
+  #feature .featured-border2 {
+    border-bottom: 1px solid #ededed;
+  }
+
+  #feature .featured-border3 {
+    border-right: 1px solid #ededed;
+  }
+
+  #feature .feature-item {
+
+    padding: 30px;
+    overflow: hidden;
+    -moz-transition: all .8s ease;
+    -webkit-transition: all .8s ease;
+    transition: all .8s ease;
+  }
+
+  #feature .feature-item .feature-icon {
+    background: white;
+    width: 100px;
+    height: 100px;
+    margin: 0px auto;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-bottom: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 30px;
+    border: 1px solid #D8366F;
+    margin-top: 12px;
+  }
+
+  #feature .feature-item .feature-icon i {
+    font-size: 40px;
+    color: #da9ab0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 32%;
+  }
+
+  #feature .feature-item h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  #feature .feature-item p {
+    font-size: 16px;
+    display: block;
+  }
+
+  #feature .feature-item:hover {
+    box-shadow: 0px 0px 25px 0px rgba(95, 95, 95, 0.24);
+    -moz-transition: all .8s ease;
+    -webkit-transition: all .8s ease;
+    transition: all .8s ease;
+  }
+
+  #feature .feature-item:hover .feature-icon {
+    background: #D8366F;
+    -moz-transition: all .8s ease;
+    -webkit-transition: all .8s ease;
+    transition: all .8s ease;
+  }
+
+  #feature .feature-item:hover .feature-icon i {
+    color: #fff;
+    -moz-transition: all .8s ease;
+    -webkit-transition: all .8s ease;
+    transition: all .8s ease;
+  }
+</style>
+
+<body>
+  {% for message in messages %}
+  <center>
+    <p style="font-size:19px;" id="success-alert" class="alert alert-primary"> {{message}}</p>
+  </center>
+  {% endfor %}
+
+  <!-- Header Section Start -->
+  <header id="home" class="hero-area">
+    <div class="overlay">
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
+      <div class="container">
+        <a href="/" class="navbar-brand"><img style="width:200px;" src="{% static 'img/logo.png' %%}" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="lni-menu"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto w-100 justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#home">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#services">Services</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#business-plan">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#features">Features</a>
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#pricing">Pricing</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#coverage">Coverage</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#contact">Contact</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row space-100">
+        <div class="col-lg-6 col-md-12 col-xs-12">
+          <div class="contents">
+            <h2 class="head-title">Sunsari Networks <br>And Service Pvt . Ltd</h2>
+            <p>A complete solution to cable television and digital networks.</p>
+            <div class="header-button">
+              <a href="#" class="btn btn-border-filled">Our
+                packages</a>
+              <a href="#contact" class="btn btn-border page-scroll"> Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-xs-12 p-0">
+          <div class="intro-img">
+            <img
+              src="https://scontent-xsp1-2.xx.fbcdn.net/v/t1.6435-9/p640x640/80327533_1203156179875067_2166464654669250560_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=e3f864&_nc_ohc=QX8nszI0sawAX-V2v6o&_nc_ht=scontent-xsp1-2.xx&oh=6e8c4ed7d05d05c234dcde7f9108fd81&oe=612896DB"
+              alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header Section End -->
+
+
+
+  <!-- Cool Fetatures Section Start -->
+  <center> <span id="services">
+      <section style="background-color:white;" id="feature" class="section">
+
+        <div class="container">
+          <!-- Start Row -->
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="features-text section-header text-center">
+                <div>
+                  <h2 class="section-title">Our Services</h2>
+                  <div class="desc-text">
+                    <p> “When you service and feel others feel important, you help yourself feel important too.” – <i>
+                        David
+                        J.
+                        Schwartz
+                      </i> </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- End Row -->
+          <!-- Start Row -->
+          <div class="row featured-bg">
+
+
+
+
+
+
+            {% for feature in services %}
+
+            <!-- Start Col -->
+            <div class="col-lg-6 col-md-6 col-xs-12 p-0">
+              <!-- Start Fetatures -->
+              <div class="feature-item">
+                <div class="feature-icon float-left">
+                  <i class="fa fa-{{feature.image}}"></i>
+                </div>
+                <div class="feature-info">
+                  <h4>{{feature.title}}</h4>
+                  <p>{{feature.description}}</p>
+                </div>
+              </div>
+              <!-- End Fetatures -->
+            </div>
+            <!-- End Col -->
+            {% endfor %}
+
+
+
+          </div>
+          <!-- End Row -->
+        </div>
+
+      </section>
+    </span>
+  </center>
+  <!-- Cool Fetatures Section End -->
+  <!-- Business Plan Section Start -->
+  <section style="background-color:#F9F9F9;" id="business-plan">
+    <div class="container">
+
+      <div class="row">
+        <!-- Start Col -->
+        <div class="col-lg-6 col-md-12 pl-0 pt-70 pr-5">
+          <div class="business-item-img">
+            {% for aboutus in about %}
+            <img src="{{aboutus.image.url}}" class="img-fluid" alt="">
+
+            {% endfor %}
+          </div>
+        </div>
+        <!-- End Col -->
+        <!-- Start Col -->
+        <div class="col-lg-6 col-md-12 pl-4">
+          <div class="business-item-info">
+            {% for aboutus in about %}
+            <h3>{{aboutus.title}}</h3>
+
+            <p>{{aboutus.description}}</p>
+            {% endfor %}
+            <a style="width:50%;color:white;" class="btn btn-common" href="#">Know more about us!</a>
+          </div>
+        </div>
+        <!-- End Col -->
+
+      </div>
+    </div>
+  </section>
+  <!-- Business Plan Section End -->
+
+
+
+  <!-- Cool Fetatures Section Start -->
+  <section style="background-color:white;" id="features" class="section">
+    <div class="container">
+      <!-- Start Row -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="features-text section-header text-center">
+            <div>
+              <h2 class="section-title">Feature in our services</h2>
+              <div class="desc-text">
+                <p> “When you service and feel others feel important, you help yourself feel important too.” – <i>
+                    David
+                    J.
+                    Schwartz
+                  </i> </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- End Row -->
+      <!-- Start Row -->
+      <div class="row featured-bg">
+
+
+
+
+
+
+        {% for feature in features %}
+
+        <!-- Start Col -->
+        <div class="col-lg-6 col-md-6 col-xs-12 p-0">
+          <!-- Start Fetatures -->
+          <div class="feature-item">
+            <div class="feature-icon float-left">
+              <i class="fa fa-{{feature.icon}}"></i>
+            </div>
+            <div class="feature-info">
+              <h4>{{feature.title}}</h4>
+              <p>{{feature.description}}</p>
+            </div>
+          </div>
+          <!-- End Fetatures -->
+        </div>
+        <!-- End Col -->
+        {% endfor %}
+
+
+
+      </div>
+      <!-- End Row -->
+    </div>
+  </section>
+  <!-- Cool Fetatures Section End -->
+
+
+  <!-- Our Pricing Plan Section Start -->
+  <section style="background-color:#F9F9F9;" id="pricing" class="section">
+    <div class="container">
+      <!-- Start Row -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="pricing-text section-header text-center">
+            <div>
+              <h2 class="section-title">Pricing Plans</h2>
+              <div class="desc-text">
+                <p>Reliable internet @ lowcost and it's time to go online.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- End Row -->
+      <!-- Start Row -->
+      <div class="row pricing-tables">
+        <!--  Start Col -->
+
+        {% for package in packages %}
+        <div class="col-lg-4 col-md-4 col-xs-12">
+          <div class="pricing-table text-center">
+            <div class="pricing-details">
+              <h3>{{package.mbps}} &nbsp;Mbps</h3>
+              <h1><span> Rs.</span>{{package.price}}</h1>
+              <ul>
+                {% for des in package.description.all %}
+                <li> {{ des }}</li>
+                {% endfor %}
+
+              </ul>
+            </div>
+            <div class="plan-button">
+              <a href="#" class="btn btn-border">Purchase</a>
+            </div>
+          </div>
+        </div>
+        <!--  End Col -->
+
+        {% endfor %}
+
+
+      </div>
+      <!-- End Row -->
+    </div>
+  </section>
+  <!-- Our Pricing Plan Section End -->
+
+  <!-- Client Testimoninals Section Start -->
+  <section id="testimonial" class="section">
+    <div class="container right-position">
+      <!-- Start Row -->
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <div class="video-promo-content text-center">
+
+            <h1 class="customer"> Review by our happy customers </h1>
+          </div>
+        </div>
+      </div>
+      <!-- End Row -->
+      <!-- Start Row -->
+      <div style="margin-top:-70px;" class="row justify-content-center testimonial-area">
+        <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12 pr-20 pl-20" style="overflow: hidden;padding-bottom: 60px">
+          <div id="client-testimonial" class="text-center owl-carousel">
+
+
+            {% for review in reviews %}
+            <div class="item">
+              <div class="testimonial-item">
+                <div class="content-inner">
+                  <p class="description">{{ review.description }}</p>
+                  <div class="author-info">
+                    <h5>-{{review.client_name}}</h5>
+                  </div>
+                </div>
+                <center>
+                  <div style="width:100px;" class="client-thumb">
+                    <img class="img-fluid img-responsive" src="{{review.image.url}}" alt="">
+                  </div>
+                </center>
+              </div>
+            </div>
+
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      <!-- End Row -->
+    </div>
+  </section>
+  <!-- Client Testimoninals Section End -->
+
+
+
+
+  <!-- Our coverage Start -->
+  <section style="background-color:#F9F9F9;" id="coverage" class="section">
+    <div class="container">
+      <!-- Start Row -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="pricing-text section-header text-center">
+            <div>
+              <h2 class="section-title">Our Coverage</h2>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- End Row -->
+      <!-- Start Row -->
+      <div class="row pricing-tables">
+        <!--  Start Col -->
+
+
+        <div class="col-lg-12 col-md-12 col-xs-12">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7064.199906939413!2d85.31450000000002!3d27.7142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1627660686820!5m2!1sen!2snp"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        </div>
+        <!--  End Col -->
+
+
+
+      </div>
+      <!-- End Row -->
+    </div>
+  </section>
+  <!-- Our Pricing Plan Section End -->
+
+
+  <!-- Team section Start -->
+  <section id="team" class="section">
+    <div class="container">
+      <!-- Start Row -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="team-text section-header text-center">
+            <div>
+              <h2 class="section-title">Team Members</h2>
+              <div class="desc-text">
+                <p>Team can win anything and everything.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- End Row -->
+      <!-- Start Row -->
+      <div class="row">
+
+
+
+        {% for  team in teams %}
+        <!-- Start Col -->
+
+        <div style="margin-top:30px;" class="col-lg-3 col-md-6 col-xs-12">
+          <div class="single-team">
+            <div class="team-thumb">
+              <img src="{{team.image.url}}" class="img-fluid" alt="">
+            </div>
+
+            <div class="team-details">
+              <div class="team-social-icons">
+                <ul class="social-list">
+                  <li><a href="{{team.facebook}}"><i class="lni-facebook-filled"></i></a></li>
+                  <li><a href="{{team.twitter}}"><i class="lni-twitter-filled"></i></a></li>
+                  <li><a href="{{team.gmail}}"><i class="lni-google-plus"></i></a></li>
+                </ul>
+              </div>
+              <div class="team-inner text-center">
+                <h5 class="team-title">{{team.full_name}}</h5>
+                <p>{{team.post}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Start Col -->
+
+        {% endfor %}
+
+
+
+
+      </div>
+      <!-- End Row -->
+    </div>
+  </section>
+  <!-- Team section End -->
+
+
+  <!-- Blog Section -->
+  <section id="blog" class="section">
+    <!-- Container Starts -->
+    <div class="container">
+      <!-- Start Row -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="blog-text section-header text-center">
+            <div>
+              <h2 class="section-title">Latest Blog Posts</h2>
+              <div class="desc-text">
+                <p>A well-executed blog sets you apart as an expert in your field.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- End Row -->
+      <!-- Start Row -->
+      <div class="row">
+        <!-- Start Col -->
+        {% for blog in blogs %}
+        <div style="margin-top:20px;" class="col-lg-4 col-md-6 col-xs-12 blog-item">
+          <!-- Blog Item Starts -->
+          <div class="blog-item-wrapper">
+            <div class="blog-item-img">
+              <a href="single-post.html">
+                <img src="{{blog.image.url}}" class="img-fluid" alt="">
+              </a>
+            </div>
+            <div class="blog-item-text">
+              <h3><a href="single-post.html">{{blog.title}}
+
+                  <p>{{blog.description}}</p>
+
+            </div>
+            <div class="author">
+              <span class="name"><i class="lni-user"></i><a href="#">{{blog.written_by}}</a></span>
+              <span class="date float-right"><i class="lni-calendar"></i><a
+                  href="#">{{blog.created_on|date:'Y-m-d'}}</a></span>
+            </div>
+          </div>
+          <!-- Blog Item Wrapper Ends-->
+        </div>
+        <!-- End Col -->
+
+        {% endfor %}
+
+      </div>
+      <!-- End Row -->
+    </div>
+  </section>
+  <!-- blog Section End -->
+
+  <!-- Contact Us Section -->
+  <section id="contact" class="section">
+    <!-- Container Starts -->
+    <div class="container">
+      <!-- Start Row -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="contact-text section-header text-center">
+            <div>
+              <h2 class="section-title">Get In Touch</h2>
+              <div class="desc-text">
+                <p>Share your problems using your email address.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- End Row -->
+      <!-- Start Row -->
+      <div class="row">
+        <!-- Start Col -->
+        <div class="col-lg-6 col-md-12">
+          <form action={% url 'send_mail' %} id="contactForm" method="POST">
+            {% csrf_token %}
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Name" required
+                    data-error="Please enter your name">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" placeholder="Subject" id="msg_subject" class="form-control" name="subject" required
+                    data-error="Please enter your subject">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="email" name="email" placeholder="Email" required
+                    data-error="Please enter your Email">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="form-group">
+                  <textarea class="form-control" id="message" name="message" placeholder="Write Message" rows="4"
+                    data-error="Write your message" required></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>
+                <div class="submit-button">
+                  <button class="btn btn-common" id="submit" type="submit">Submit</button>
+                  <div id="msgSubmit" class="h3 hidden"></div>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- End Col -->
+        <!-- Start Col -->
+        <div class="col-lg-1">
+
+        </div>
+        <!-- End Col -->
+        <!-- Start Col -->
+        <div class="col-lg-4 col-md-12">
+          <div class="contact-img">
+            <img src="{% static 'img/contact/01.png' %}" class="img-fluid" alt="">
+          </div>
+        </div>
+        <!-- End Col -->
+        <!-- Start Col -->
+        <div class="col-lg-1">
+        </div>
+        <!-- End Col -->
+
+      </div>
+      <!-- End Row -->
+    </div>
+  </section>
+  <!-- Contact Us Section End -->
+
+  <!-- Footer Section Start -->
+  <footer>
+    <!-- Footer Area Start -->
+    <section id="footer-Content">
+      <div class="container">
+        <!-- Start Row -->
+        <div class="row">
+
+          <!-- Start Col -->
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+
+            <div class="footer-logo">
+              <img style="width:250px;" src="{% static 'img/footer-logo.png' %}" alt="">
+            </div>
+          </div>
+          <!-- End Col -->
+          <!-- Start Col -->
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+            <div class="widget">
+              <h3 class="block-title">Company</h3>
+              <ul class="menu">
+                {% for c in company %}
+                <li><a href="#"> {{c.name}}</a></li>
+                <li><a href="#"> {{c.address}}</a></li>
+                <li><a href="#"> {{c.phone_num}}</a></li>
+                <li><a href="#"> {{c.cell_num}}</a></li>
+                <li><a href="#"> {{c.email_us}}</a></li>
+                <li><a href="#"> {{c.office_time}}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+          <!-- End Col -->
+          <!-- Start Col -->
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+            <div class="widget">
+              <h3 class="block-title">Social Media</h3>
+              <ul class="menu">
+                {% for media in medias %}
+                <li><a target="_blank" href="{{media.url}}"> {{media.name}} </a></li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+          <!-- End Col -->
+          <!-- Start Col -->
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+            <div class="widget">
+              <h3 class="block-title">Our Services</h3>
+              <ul class="menu">
+                {% for service in services|slice:":3" %}
+                <li><a href="#"> -{{service.title}}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+          <!-- End Col -->
+
+        </div>
+        <!-- End Row -->
+      </div>
+      <!-- Copyright Start  -->
+
+      <div class="copyright">
+        <div class="container">
+          <!-- Star Row -->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="site-info text-center">
+                <p> <a href="http://binodshresthaa.com.np" rel="nofollow">@Copyright SNS </a></p>
+              </div>
+
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+      </div>
+      <!-- Copyright End -->
+    </section>
+    <!-- Footer area End -->
+
+  </footer>
+  <!-- Footer Section End -->
+
+
+  <!-- Go To Top Link -->
+  <a href="#" class="back-to-top">
+    <i class="lni-chevron-up"></i>
+  </a>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader" id="loader-1"></div>
+  </div>
+  <!-- End Preloader -->
+
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+  <script src="{% static 'js/jquery-min.js'%}"></script>
+  <script src="{% static 'js/popper.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/owl.carousel.js' %}"></script>
+  <script src="{% static 'js/jquery.nav.js' %}"></script>
+  <script src="{% static 'js/scrolling-nav.js' %}"></script>
+  <script src="{% static 'js/jquery.easing.min.js' %}"></script>
+  <script src="{% static 'js/nivo-lightbox.js' %}"></script>
+  <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+  <script>
+    $('#success-alert').fadeTo(1500, 500).slideUp(500, function () {
+      $('#success-alert').slideUp(500);
+    });
+  </script>
+</body>
+
+</html>
